@@ -11,5 +11,5 @@ Tool for designing and running computational experiments in systems biology.
 * A **level** for a factor is a value that is assigned the factor for an experiment.
 * **Factor space** has dimensions of factors, and the coordinates for a factor are its levels.
 * A **condition** is a collection of pairings of factors with their level so that all factors are assigned a level.
-* An **experiment** is the execution of a condition that produces a collection of result statistics.
+* An **experiment** is the execution of a condition that produces a collection of results.
 * A **work unit** is a collection of experiments. Typically, the conditions for experiments are chosen as a hypercube in factor space.
