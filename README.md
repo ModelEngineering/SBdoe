@@ -13,3 +13,9 @@ Tool for designing and running computational experiments in systems biology.
 * A **condition** is a collection of pairings of factors with their level so that all factors are assigned a level.
 * An **experiment** is the execution of a condition that produces a collection of results.
 * A **work unit** is a collection of experiments. Typically, the conditions for experiments are chosen as a hypercube in factor space.
+
+# Application Programming Interface (API)
+The user specifies (or manually creates) ``Factor`` objects that have attributes of ``name`` and data type for their ``level``. An ``Experiment`` is a condition paired with an ``ExeprimentExecution``, a function that can interpret a condition,
+run an experiment, and produce an ``ExperimentResult``.
+A ``Workunit`` is a collection of ``Experiments`` that are submitted to the ``ExperimentScheduler``, which provides capabilities for monitoring progress and halting execution.
+``ExperimentScheduler`` returns 0 or more ``ExperimentResult``.
